@@ -1,12 +1,14 @@
 # extractor-wiki-data
+this script use to extract multi-language data from wikidata.
+anyone can freely use and update this code.
 
-## dump wiki-data
+## Dumpping wiki-data
 
 ```
 wget http://dumps.wikimedia.org/wikidatawiki/latest/wikidatawiki-latest-pages-articles.xml.bz2
 ```
 
-## run script
+## Running script
 
 ```
 $ bzip2 -dc ./wikidatawiki-latest-pages-articles.xml.bz2 | python ./extractor-wiki-data.py  2> /dev/null  | head -n 30
